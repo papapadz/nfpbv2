@@ -224,7 +224,7 @@
       <div class="card-header bg-success">
         <h1 class="text-white">{{ message }}</h1></div>
       <div class="card-body">
-         <h3>Your employee ID is {{ emp_id }}</h3>
+         <h3>Your Reference Number is {{ emp_id }}</h3>
       </div>
       <div class="card-footer">
         <button class="btn btn-primary btn-sm float-right" @click="refresh">Register Again</button>

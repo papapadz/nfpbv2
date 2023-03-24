@@ -2986,7 +2986,7 @@ var render = function render() {
     staticClass: "text-white"
   }, [_vm._v(_vm._s(_vm.message))])]), _vm._v(" "), _c("div", {
     staticClass: "card-body"
-  }, [_c("h3", [_vm._v("Your employee ID is " + _vm._s(_vm.emp_id))])]), _vm._v(" "), _c("div", {
+  }, [_c("h3", [_vm._v("Your Reference Number is " + _vm._s(_vm.emp_id))])]), _vm._v(" "), _c("div", {
     staticClass: "card-footer"
   }, [_c("button", {
     staticClass: "btn btn-primary btn-sm float-right",
