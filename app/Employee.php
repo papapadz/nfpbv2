@@ -47,4 +47,8 @@ class Employee extends Model
     public function licenses() {
         return $this->hasMany(License::class,'employee_id','employee_id')->with('type');
     }
+
+    public function fileImg() {
+        return $this->hasOne(FileHandler::class,'id','img');
+    }
 }

@@ -247,7 +247,7 @@ class EmployeeController extends Controller
 
     public function get() {
         return Employee::with([
-            'education','employment','family','licenses'
+            'education','employment','family','licenses','fileImg'
         ])->get();
     }
 }
