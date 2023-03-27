@@ -44,6 +44,6 @@ class Employee extends Model
     }
 
     public function licenses() {
-        return $this->hasMany(License::class,'employee_id','employee_id');
+        return $this->hasMany(License::class,'employee_id','employee_id')->with('type');
     }
 }

@@ -20,4 +20,8 @@ class License extends Model
         'date_expired'
     
     ];
+
+    public function type() {
+        return $this->hasOne(LicenseType::class,'id','license_type_id');
+    }
 }
