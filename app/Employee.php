@@ -28,7 +28,8 @@ class Employee extends Model
         'citizenship',
         'height',
         'weight',
-        'bloodType'
+        'bloodType',
+        'img'
     ];
 
     public function education() {
