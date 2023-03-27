@@ -12,7 +12,6 @@
 */
 
 Route::get('/', function () {
-    dd(App\Employee::get());
     return view('welcome');
 });
 
