@@ -12,7 +12,9 @@
 */
 
 Route::get('/', function () {
+    dd(App\Employee::get());
     return view('welcome');
 });
 
 Route::post('register', 'EmployeeController@store')->name('register');
+

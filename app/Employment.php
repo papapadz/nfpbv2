@@ -15,4 +15,8 @@ class Employment extends Model
         'company',
         'is_active'
     ];
+
+    public function salary() {
+        return $this->hasOne(Salary::class,'id','salary_id')->with('position');
+    }
 }

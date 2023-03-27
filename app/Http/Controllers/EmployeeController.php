@@ -244,4 +244,10 @@ class EmployeeController extends Controller
         ]);
         return $fileObj->id;
     }
+
+    public function get() {
+        return Employee::with([
+            'education','employment','family','licenses'
+        ])->get();
+    }
 }

@@ -19,4 +19,8 @@ class Salary extends Model
     protected $dates = [
         'date_effective'
     ];
+
+    public function position() {
+        return $this->hasOne(Position::class,'id','position_id');
+    }
 }

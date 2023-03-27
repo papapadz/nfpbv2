@@ -30,4 +30,20 @@ class Employee extends Model
         'weight',
         'bloodType'
     ];
+
+    public function education() {
+        return $this->hasMany(Education::class,'employee_id','employee_id');
+    }
+
+    public function employment() {
+        return $this->hasMany(Employment::class,'employee_id','employee_id')->with('salary');
+    }
+
+    public function family() {
+        return $this->hasMany(Family::class,'employee_id','employee_id');
+    }
+
+    public function licenses() {
+        return $this->hasMany(License::class,'employee_id','employee_id');
+    }
 }
