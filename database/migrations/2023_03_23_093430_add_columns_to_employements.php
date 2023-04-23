@@ -27,7 +27,8 @@ class AddColumnsToEmployements extends Migration
     public function down()
     {
         Schema::table('employments', function (Blueprint $table) {
-            //
+            $table->dropColumn('company');
+            $table->dropColumn('is_active');
         });
     }
 }

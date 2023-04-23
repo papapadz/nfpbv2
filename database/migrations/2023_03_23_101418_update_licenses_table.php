@@ -26,7 +26,7 @@ class UpdateLicensesTable extends Migration
     public function down()
     {
         Schema::table('licenses', function (Blueprint $table) {
-            //
+            $table->dropColumn('date_issued');
         });
     }
 }

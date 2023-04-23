@@ -31,7 +31,12 @@ class AddColumntsToEmployeesTable extends Migration
     public function down()
     {
         Schema::table('employees', function (Blueprint $table) {
-            //
+            $table->dropColumn('email');
+            $table->dropColumn('citizenship');
+            $table->dropColumn('height');
+            $table->dropColumn('weight');
+            $table->dropColumn('bloodType');
+            $table->dropColumn('img');
         });
     }
 }
